@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetFigureArea", "GetFigureArea\GetFigureArea.csproj", "{B6DE143C-4C51-4A76-92A1-9F4440DC174B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6DE143C-4C51-4A76-92A1-9F4440DC174B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6DE143C-4C51-4A76-92A1-9F4440DC174B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6DE143C-4C51-4A76-92A1-9F4440DC174B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6DE143C-4C51-4A76-92A1-9F4440DC174B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A3CACD00-C2B9-4CCE-AA0D-7B3D8B43CAB0}
+	EndGlobalSection
+EndGlobal
