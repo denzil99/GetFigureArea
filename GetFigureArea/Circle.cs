@@ -29,7 +29,7 @@
 		{
 			get
 			{
-				return Pi * Math.Pow(Radius, 2);
+				return 2 * Pi * Math.Pow(Radius, 2);
 			}
 		}
 		#endregion
