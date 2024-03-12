@@ -34,5 +34,31 @@ namespace GetFigureArea.Tests
 			double result = _figureAreaService.GetTriangleArea(sideA, sideB, sideC);
 			Assert.AreEqual(expected, Math.Round(result, 3));
 		}
+
+		[Test]
+		public void GetFigureTriangleAreaTest()
+		{
+			double val1 = 5;
+			double val2 = 6;
+			double val3 = 7;
+			double expected = 14.697;
+
+
+			double result = _figureAreaService.GetFigureArea(val1, val2, val3);
+			Assert.AreEqual(expected, Math.Round(result, 3));
+		}
+
+		[Test]
+		public void GetFigureCircleAreaTest()
+		{
+			double val1 = 5.5;
+			double val2 = 0;
+			double val3 = 0;
+			double expected = 190.066;
+
+
+			double result = _figureAreaService.GetFigureArea(val1, val2, val3);
+			Assert.AreEqual(expected, Math.Round(result, 3));
+		}
 	}
 }
