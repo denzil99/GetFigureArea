@@ -24,5 +24,13 @@
 		/// <param name="radius">Радиус круга</param>
 		/// <returns></returns>
 		public double GetCircleArea(double radius);
+		/// <summary>
+		/// Возвращает true, если прямоугольник прямоугольный
+		/// </summary>
+		/// <param name="sideA">Сторона А</param>
+		/// <param name="sideB">Сторона B</param>
+		/// <param name="sideC">Сторона C</param>
+		/// <returns></returns>
+		public bool CheckTriangleOnRightAngle(double sideA, double sideB, double sideC);
 	}
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -44,6 +45,23 @@ namespace GetFigureArea
 				return (SideA + SideB + SideC) / 2;
 			}
 		}
+		/// <summary>
+		/// Возвращает true, если прямоугольник прямоугольный
+		/// </summary>
+		public bool IsRightAngeled
+		{
+			get
+			{
+				//Эх, надо было через инты всё делать...
+				if (Math.Round(Math.Pow(SideA, 2), 3) == (Math.Round(Math.Pow(SideB, 2), 3) + Math.Round(Math.Pow(SideC, 2), 3))) 
+					return true;
+				else if (Math.Round(Math.Pow(SideB, 2), 3) == (Math.Round(Math.Pow(SideA, 2), 3) + Math.Round(Math.Pow(SideC, 2), 3)))
+					return true;
+				else if (Math.Round(Math.Pow(SideC, 2), 3) == (Math.Round(Math.Pow(SideB, 2), 3) + Math.Round(Math.Pow(SideA, 2), 3)))
+					return true;
+				return false;
+			}
+		}
 		#endregion
 
 		#region .ctor
@@ -52,7 +70,7 @@ namespace GetFigureArea
 			SideA = sideA;
 			SideB = sideB;
 			SideC = sideC;
-		} 
+		}
 		#endregion
 	}
 }

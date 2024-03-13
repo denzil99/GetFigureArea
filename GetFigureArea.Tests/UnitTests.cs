@@ -60,5 +60,18 @@ namespace GetFigureArea.Tests
 			double result = _figureAreaService.GetFigureArea(val1, val2, val3);
 			Assert.AreEqual(expected, Math.Round(result, 3));
 		}
+
+		[Test]
+		public void CheckIfRightAngeledTest()
+		{
+			double val1 = 6;
+			double val2 = 10;
+			double val3 = 8;
+			bool expected = true;
+
+
+			var result = _figureAreaService.CheckTriangleOnRightAngle(val1, val2, val3);
+			Assert.AreEqual(expected, result);
+		}
 	}
 }
