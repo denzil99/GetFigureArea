@@ -4,6 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//SELECT p.id, p.name as product, c.name AS category_name
+//FROM Products p
+//LEFT JOIN Categories c ON p.id = c.product_id
+//ORDER BY p.id;
+
 namespace GetFigureArea
 {
 	public class FigureAreaService : IFigureAreaService
